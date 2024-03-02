@@ -12,3 +12,16 @@ p {
 span {
     font-weight: bold;
 }
+
+h2 {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+}
+
+#littlecircle {
+    margin-left: 4.30rem;
+}
+
+#littlecircle2 {
+    margin-left: 3;
+}
