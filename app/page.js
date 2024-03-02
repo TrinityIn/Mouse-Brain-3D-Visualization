@@ -1,9 +1,12 @@
 import Banner from "./components/Banner";
 import Image from "next/image";
 import LittleCircle from "./components/LittleCircle";
+import Bounce from "bounce.js";
 
 
 export default function Home() {
+  var bounce = new Bounce();
+  
   return (
       
       <div>
@@ -49,7 +52,7 @@ export default function Home() {
           <div id="allenLink" class="text-3xl px-8 py-4 text-center flex flex-col mx-auto justify-center">
             <h2 class="py-2">Check out the Allen Dataset Below</h2>
 
-            <a target="_blank" href="https://connectivity.brain-map.org/" class="pl-16  rounded-full border-2 border-slate-100 py-4 bg-slate-500 hover:shadow-xl active:border-4 active:border-slate-300 hover:animate-pulse">
+            <a target="_blank" href="https://connectivity.brain-map.org/" class="pl-16  rounded-full border-4 border-slate-200 py-4 bg-indigo-50 hover:shadow-xl active:border-4 active:border-slate-300 hover:animate-pulse">
               <Image
                 src="/mouse.png"
                 width={350}
@@ -62,23 +65,19 @@ export default function Home() {
 
         
         <h1 class="text-6xl py-4 px-12">Our Process</h1>
+        <div id="entire" class="flex flex-row justify-between">
+        
+        <div id="timeline" class="">
         <div id="littlecircle">
         <LittleCircle />
         </div>
         <div id="process" class="flex flex-col ml-20 px-4  w-5/6 border-l-2">
-        
-
-        
             <div id="timeline" class=" flex flex-col w-auto pb-10">
               <div id="dataset" class="text-left">
                 <h2>Selecting a dataset</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
-
-
-              
             </div>
-
         </div>
 
         <div id="littlecircle">
@@ -122,7 +121,20 @@ export default function Home() {
         </div>
         </div>
 
-        
+        </div>
+
+        <div class=" sticky bottom-0 pr-12 place-self-end"> 
+          {/* try w animation */}
+
+          <Image 
+            src="/rocket2.png"
+            width={1100}
+            height={1100}
+            alt="rocket"
+          />
+        </div>
+
+        </div>
 
       </div>
   );
