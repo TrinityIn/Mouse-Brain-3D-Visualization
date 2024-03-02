@@ -26,17 +26,10 @@ h2 {
     margin-left: 3;
 }
 
-.animate-bounce2 {
-    animation: bounce 1s infinite;
+li {
+  font-family: monospace;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
 }
 
-@keyframes bounce2 {
-  0%, 100% {
-    transform: translateY(55px);
-    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-  }
-  50% {
-    transform: translateY(0);
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-  }
-}
+

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "bounce.js": "^0.8.2",
     "next": "14.1.1",
     "react": "^18",

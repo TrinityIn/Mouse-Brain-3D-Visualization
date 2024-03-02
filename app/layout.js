@@ -6,7 +6,7 @@ const bebas = Bebas_Neue({weight: "400", subsets: ["latin"]})
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Brain Voyager",
+  title: "Brain Voyager 🧠",
   description: "NeuroHackathon 2024 Project",
 };
 
