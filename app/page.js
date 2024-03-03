@@ -150,13 +150,74 @@ export default function Home() {
           
         </div>
 
-        <div id="future section" class="flex flex-col">
+        <div id="future section" class="flex flex-col border-b-2" data-aos="fade-up">
           
           <h1 class="text-6xl mt-4 px-8">Future Goals</h1>
 
           <HorizScrollSection />
 
         </div>
+
+        <h1 class="text-6xl px-8 py-4" data-aos="fade-up">Skills Learned / Used / Practiced</h1>
+        <div id="skillsUsed"class="flex flex-row px-8 gap-x-4" data-aos="fade-up">
+
+          
+          <div class="flex flex-col px-8">
+          <p class="font-bold text-3xl">Languages</p>
+          <ul class="px-4 pb-4 list-disc flex flex-col">
+            <li>C#</li>
+            <li>Bash</li>
+            <li>Python</li>
+          </ul>
+          </div>
+
+          <div class="flex flex-col px-8">
+            <p class="font-bold text-3xl w-fit">Modeling</p>
+          <ul class=" pb-4 px-4 list-disc flex flex-col">
+            <li>SolidWorks</li>
+            <li>F3D</li>
+            <li>Blender</li>
+            <li>Unity</li>
+          </ul>
+          </div>
+
+          <div class="flex flex-col">
+          <p class="font-bold text-3xl pr-10">Processing<span class="text-white">_</span>Data</p>
+          <ul class="px-12 pb-4 list-disc flex flex-col">
+            <li>Allen SDK</li>
+            <li>Excel</li>
+          </ul>
+          </div>
+
+          <div class="flex flex-col">
+          <p class="font-bold text-3xl pr-10">Website</p>
+          <ul class="px-12 pb-4 list-disc flex flex-col">
+            <li>JS (React, Next.js, Node.js)</li>
+            <li>CSS (TailwindCSS)</li>
+            <li>HTML</li>
+          </ul>
+          </div>
+          
+
+
+          {/* <ul class="px-12 pb-4 list-disc">
+            <li>VR Development</li>
+            <li>Using Oculus SDK</li>
+            <li>C#, Bash, Python</li>
+            <li>Solidworks</li>
+            <li>Allen SDK</li>
+            <li>F3D</li>
+            <li>Modeling in Blender</li>
+            <li>Developing in Unity</li>
+            <li>Making a super cool gorgeous amazing showstopping website 😸</li>
+          </ul> */}
+
+        </div>
+
+        <div id="Website Info">
+
+        </div>
+
 
       </div>
   );
